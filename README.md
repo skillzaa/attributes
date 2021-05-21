@@ -1,0 +1,2 @@
+This is a small learning module. We have created a struct called attributes. We have 20 attributes each with a getter , setter and unit test.
+This is the most simple and robust state management system, more abstractions can be built on this.
