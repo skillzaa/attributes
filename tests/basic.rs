@@ -1,4 +1,4 @@
-use attr::Attributes;
+use bilzaa2dattributes::Attributes;
 //big mistake every set should return same value if changed
 #[cfg(test)]
 #[test]
@@ -19,13 +19,13 @@ fn shadow_color() {
     let val = a.get_shadow_color();
     assert_eq!(val,"strangeText");
 }
-#[test]
-fn name() {
-    let mut a = Attributes::new();
-    a.set_name("strangeText".to_string());
-    let val = a.get_name();
-    assert_eq!(val,"strangeText");
-}
+// #[test]
+// fn name() {
+//     let mut a = Attributes::new();
+//     a.set_name("strangeText".to_string());
+//     let val = a.get_name();
+//     assert_eq!(val,"strangeText");
+// }
 #[test]
 fn color() {
     let mut a = Attributes::new();

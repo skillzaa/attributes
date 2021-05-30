@@ -4,7 +4,7 @@ pub struct Attributes{
     //--strings
     bounding_rectangle_color:String,
     shadow_color:String,
-    name:String,
+    // name:String, //removed since it is in hasmap that already has a string key so this is confusing
     color:String,
     //Flags
     clockwise:bool,
@@ -30,7 +30,7 @@ impl Attributes {
         Attributes {
         bounding_rectangle_color: String::from("red"),
         shadow_color:String::from("red"),
-        name:String::from("red"),
+        // name:String::from("red"), //depricated
         color:String::from("red"),   
         clockwise:true,
         filled:true,
@@ -64,14 +64,14 @@ impl Attributes {
     pub fn get_shadow_color(&self)->String{
         String::from(&self.shadow_color)
     }
-    pub fn set_name(&mut self,v:String)->String{
-        self.name = v;
-        String::from(&self.shadow_color)
+    // pub fn set_name(&mut self,v:String)->String{
+    //     self.name = v;
+    //     String::from(&self.shadow_color)
         
-    }
-    pub fn get_name(&self)->String{
-        String::from(&self.name)
-    }
+    // }
+    // pub fn get_name(&self)->String{
+    //     String::from(&self.name)
+    // }
     pub fn set_color(&mut self,v:String)->String{
         self.color = v;
         String::from(&self.color)
