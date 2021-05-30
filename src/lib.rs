@@ -35,19 +35,19 @@ impl Attributes {
         clockwise:true,
         filled:true,
         draw_bounding_rectangle:true,
-        opacity:3200,
-        x:3200,
-        y:3200,
-        width:3200,
-        height:3200,
-        start_angle:3200,
-        line_width:3200,
-        shadow_blur:3200,
-        shadow_offset_x:3200,
-        shadow_offset_y:3200,
-        line_dash_size:3200,
-        line_dash_gap:3200,
-        bounding_rectangle_padding:3200,
+        opacity:100,
+        x:100,
+        y:100,
+        width:100,
+        height:100,
+        start_angle:0,
+        line_width:2,
+        shadow_blur:4,
+        shadow_offset_x:1,
+        shadow_offset_y:1,
+        line_dash_size:10,
+        line_dash_gap:0,
+        bounding_rectangle_padding:5,
         }
     }
     pub fn set_bounding_rectangle_color(&mut self,v:String){
@@ -64,14 +64,7 @@ impl Attributes {
     pub fn get_shadow_color(&self)->String{
         String::from(&self.shadow_color)
     }
-    // pub fn set_name(&mut self,v:String)->String{
-    //     self.name = v;
-    //     String::from(&self.shadow_color)
-        
-    // }
-    // pub fn get_name(&self)->String{
-    //     String::from(&self.name)
-    // }
+
     pub fn set_color(&mut self,v:String)->String{
         self.color = v;
         String::from(&self.color)
