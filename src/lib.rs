@@ -1,5 +1,7 @@
-#[derive(Debug)]
+mod attrenum;
+pub use attrenum::AttributesEnum;
 
+#[derive(Debug)]
 pub struct Attributes{
     //--strings
     bounding_rectangle_color:String,
