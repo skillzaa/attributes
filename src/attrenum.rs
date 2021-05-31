@@ -1,6 +1,7 @@
 #[derive(Debug)]
 #[derive(Copy)]
 #[derive(Clone)]
+#[derive(PartialEq)]
 pub enum AttributesEnum {
     BoundingRectangleColor,
     ShadowColor,
