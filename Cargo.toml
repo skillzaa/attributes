@@ -1,6 +1,6 @@
 [package]
 name = "bilzaa2dattributes"
-version = "0.1.4"
+version = "0.1.5"
 authors = ["bilal <skillzaa.com@gmail.com>"]
 edition = "2018"
 description = "This is a small library that implements attributes"
